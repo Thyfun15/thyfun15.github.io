@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>수술 전 약 안내</title>
+<!-- 원장님 검수 완료 2026-11-26. 근거: 환자용_초안.md · 기준표_원장님작성.md. 외부 파일 없이 이 한 파일로 열림 -->
+<style>
+:root{
+  --bg:#fbf8f3; --card:#ffffff; --ink:#1f2328; --sub:#555b63; --line:#e6e0d6;
+  --accent:#2f6f5e; --accent-bg:#e7f2ee;
+  --stop:#b4441f; --stop-bg:#fdeee7;
+  --go:#2f6f5e; --go-bg:#e7f2ee;
+  --warn:#8a5a00; --warn-bg:#fff4d6;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15181b; --card:#1e2226; --ink:#eceff1; --sub:#a9b0b7; --line:#30363c;
+    --accent:#7cc7b0; --accent-bg:#1d3530;
+    --stop:#ff9b78; --stop-bg:#3a2219;
+    --go:#7cc7b0; --go-bg:#1d3530;
+    --warn:#ffd27a; --warn-bg:#3a3018;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  font-size:19px;line-height:1.65;word-break:keep-all}
+main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+header h1{font-size:1.6rem;line-height:1.35;margin:8px 0 10px}
+header p{margin:0 0 6px;color:var(--sub)}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+nav a{display:inline-block;padding:8px 14px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:.9rem}
+h2{font-size:1.3rem;margin:34px 0 12px;padding-top:6px;scroll-margin-top:12px}
+h3{font-size:1.1rem;margin:22px 0 10px}
+.box{border-radius:14px;padding:16px 18px;margin:14px 0}
+.warn{background:var(--warn-bg);color:var(--ink);border:1px solid var(--line)}
+.warn strong.t{color:var(--warn);display:block;font-size:1.1rem;margin-bottom:6px}
+ul{margin:6px 0;padding-left:1.2em}
+li{margin:6px 0}
+.drug{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.drug .name{font-weight:700;font-size:1.05rem;margin-bottom:8px}
+.drug .ex{font-weight:400;color:var(--sub);font-size:.9rem}
+.when{display:flex;gap:8px;flex-wrap:wrap}
+.pill{flex:1 1 140px;border-radius:10px;padding:8px 12px}
+.pill small{display:block;font-size:.8rem;opacity:.85}
+.pill b{font-size:1.1rem}
+.stop{background:var(--stop-bg);color:var(--stop)}
+.go{background:var(--go-bg);color:var(--go)}
+.note{background:var(--accent-bg);border-radius:12px;padding:12px 14px;margin:12px 0}
+.egfr .lv{font-weight:700;font-size:1.1rem;color:var(--accent)}
+.egfr p{margin:6px 0}
+.contact{background:var(--stop-bg);border:1px solid var(--line)}
+.contact strong.t{color:var(--stop);display:block;font-size:1.1rem;margin-bottom:6px}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  :root{--bg:#fff}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:16px}
+  main{max-width:none;padding:0}
+  nav{display:none}
+  .drug,.box,.note{break-inside:avoid}
+  h2,h3{break-after:avoid}
+}
+footer{margin-top:36px;color:var(--sub);font-size:.9rem;border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>수술 전에 먹는 약,<br>이렇게 하세요</h1>
+  <p>수술을 안전하게 받으려면 <b>어떤 약은 며칠 전에 끊고</b>, <b>어떤 약은 계속 먹어야</b> 해요.</p>
+  <p>아래에서 내가 먹는 약을 찾아 보세요.</p>
+</header>
+
+<nav>
+  <a href="#blood">피를 묽게 하는 약</a>
+  <a href="#diet">비만약</a>
+  <a href="#dm">당뇨약</a>
+  <a href="#supp">영양제·한약</a>
+  <a href="#keep">계속 먹는 약</a>
+  <a href="#fast">금식</a>
+</nav>
+
+<div class="box warn">
+  <strong class="t">⚠ 먼저 꼭 지켜 주세요</strong>
+  <ul>
+    <li>약을 <b>스스로 끊지 마세요.</b> 약을 처방한 선생님께 먼저 말씀하세요.</li>
+    <li><b>심장 스텐트 · 판막 수술</b>을 받은 분은 피를 묽게 하는 약을 끊기 전에 <b>꼭 심장내과와 상의</b>하세요.</li>
+    <li>사람마다 다를 수 있어요. 잘 모르겠으면 <b>담당 의사와 상의</b>하세요.</li>
+  </ul>
+</div>
+
+<h2 id="blood">1. 피를 묽게 하는 약</h2>
+
+<div class="drug"><div class="name">아스피린</div>
+  <div class="when"><div class="pill stop"><small>끊기</small><b>수술 3일 전</b></div><div class="pill go"><small>다시 먹기</small><b>수술 2일 뒤</b></div></div></div>
+
+<div class="drug"><div class="name">항혈소판제 <span class="ex">플라빅스(클로피도그렐) 등</span></div>
+  <div class="when"><div class="pill stop"><small>끊기</small><b>수술 3~5일 전</b></div><div class="pill go"><small>다시 먹기</small><b>수술 2~3일 뒤</b></div></div></div>
+
+<div class="drug"><div class="name">와파린</div>
+  <div class="when"><div class="pill stop"><small>끊기</small><b>수술 3~5일 전</b></div><div class="pill go"><small>다시 먹기</small><b>수술 2~3일 뒤</b></div></div></div>
+
+<div class="drug"><div class="name">새 항응고제 <span class="ex">엘리퀴스 · 자렐토 · 릭시아나 등</span></div>
+  <div class="when"><div class="pill stop"><small>끊기</small><b>수술 3~5일 전</b></div><div class="pill go"><small>다시 먹기</small><b>수술 2~3일 뒤</b></div></div></div>
+
+<div class="note">👉 「3~5일」처럼 적힌 약은 <b>며칠 전에 끊을지 의사가 정해 드려요.</b></div>
+
+<h2 id="diet">2. 비만약 · 당뇨 주사</h2>
+
+<div class="drug"><div class="name">주 1회 맞는 주사 <span class="ex">위고비 · 마운자로 · 오젬픽</span></div>
+  <div class="when"><div class="pill stop"><small>끊기</small><b>수술 1주일 전</b></div><div class="pill go"><small>다시 시작</small><b>수술 2주일 뒤</b></div></div></div>
+
+<div class="drug"><div class="name">매일 맞는 주사 <span class="ex">삭센다</span></div>
+  <div class="when"><div class="pill stop"><small>끊기</small><b>수술 전날</b></div><div class="pill go"><small>다시 시작</small><b>수술 1주일 뒤</b></div></div></div>
+
+<div class="drug"><div class="name">먹는 비만약 <span class="ex">펜터민 계열 등</span></div>
+  <div class="when"><div class="pill stop"><small>끊기</small><b>수술 1주일 전</b></div><div class="pill go"><small>다시 먹기</small><b>수술 2주일 뒤</b></div></div></div>
+
+<div class="note">👉 끊고 다시 시작하는 것은 <b>약을 처방한 과</b>와 상의하세요.</div>
+
+<h2 id="dm">3. 당뇨약 · 인슐린</h2>
+<ul>
+  <li>먹는 당뇨약(메트포르민 · 자디앙 · 포시가 등)과 인슐린은 <b>수술 때 계속 쓰세요.</b></li>
+  <li>입원하면 혈당에 맞춰 <b>병원에서 인슐린을 조절</b>해 드려요.</li>
+  <li>조절은 <b>약을 처방한 과</b>와 상의하세요.</li>
+</ul>
+
+<h3>조영제 CT 검사 때 당뇨약(메트포르민)</h3>
+<div class="note">👉 <b>CT 검사 전에 피검사를 하는 이유</b>예요. 콩팥 기능(eGFR 수치)에 따라 당뇨약 먹는 법이 달라요.</div>
+
+<div class="drug egfr"><div class="lv">eGFR 60 이상</div>
+  <p>조영제를 <b>정맥</b>에 맞는 경우: 당뇨약을 <b>끊지 않아도</b> 돼요.</p>
+  <p>조영제를 <b>동맥</b>에 맞는 경우: <b>검사일 ~ 다음 날까지</b> 당뇨약을 드시지 마세요.</p></div>
+
+<div class="drug egfr"><div class="lv">eGFR 30 ~ 60</div>
+  <p><b>검사일 ~ 다음 날까지</b> 당뇨약을 드시지 마세요.</p></div>
+
+<div class="drug egfr"><div class="lv">eGFR 30 미만</div>
+  <p>조영제 영상 검사를 <b>하지 마세요.</b></p></div>
+
+<div class="note">MRI를 찍을 때는 끊지 말고 <b>평소대로</b> 드세요.</div>
+
+<h2 id="supp">4. 영양제 · 한약</h2>
+<div class="drug"><div class="name">영양제 · 한약 <span class="ex">오메가3 · 은행잎 · 한약 등</span></div>
+  <div class="when"><div class="pill stop"><small>끊기</small><b>수술 3주 전</b></div><div class="pill go"><small>다시 먹기</small><b>수술 1주일 뒤</b></div></div></div>
+
+<h2 id="keep">5. 계속 먹는 약</h2>
+<div class="drug"><div class="name">갑상선약 · 혈압약</div>
+  <ul><li>끊지 마세요.</li><li><b>수술 당일 아침에도 물 한 모금</b>과 함께 드세요.</li></ul></div>
+
+<h2 id="fast">🍽 금식</h2>
+<ul>
+  <li>수술 <b>전날 밤 12시(자정)부터</b> 아무것도 먹거나 마시지 마세요.</li>
+  <li>수술 당일 아침 갑상선약 · 혈압약은 물 한 모금으로 드세요.</li>
+</ul>
+
+<div class="box contact">
+  <strong class="t">📞 이럴 땐 수술 전에 바로 병원에 알려 주세요</strong>
+  <ul>
+    <li>끊어야 할 약을 <b>깜빡하고 먹었을 때</b></li>
+    <li>내 약이 이 안내에 있는지 <b>잘 모를 때</b></li>
+  </ul>
+</div>
+
+<footer>
+  이 안내는 일반적인 기준이에요. 사람마다 다를 수 있으니 담당 의사의 설명을 먼저 따르세요.
+  <!-- 닥터랑 영상 링크는 올릴 곳을 정한 뒤 여기에 넣는다 -->
+</footer>
+
+</main>
+</body>
+</html>
