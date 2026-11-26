@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>수술 입원 준비</title>
+<!-- 공개용(병원 이름 · 층수 · 전화번호 · 실명 없음). 근거: 원장님이 준 「수술 예정 환자 안내문」(2026-11-27) + 01 기준. 원장님 검수 전 -->
+<style>
+:root{
+  --bg:#fbf8f3; --card:#ffffff; --ink:#1f2328; --sub:#555b63; --line:#e6e0d6;
+  --accent:#2f6f5e; --accent-bg:#e7f2ee;
+  --stop:#b4441f; --stop-bg:#fdeee7;
+  --warn:#8a5a00; --warn-bg:#fff4d6;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15181b; --card:#1e2226; --ink:#eceff1; --sub:#a9b0b7; --line:#30363c;
+    --accent:#7cc7b0; --accent-bg:#1d3530;
+    --stop:#ff9b78; --stop-bg:#3a2219;
+    --warn:#ffd27a; --warn-bg:#3a3018;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  font-size:19px;line-height:1.65;word-break:keep-all}
+main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+header h1{font-size:1.6rem;line-height:1.35;margin:8px 0 10px}
+header p{margin:0 0 6px;color:var(--sub)}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+nav a{display:inline-block;padding:8px 14px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:.9rem}
+h2{font-size:1.3rem;margin:34px 0 12px;padding-top:6px;scroll-margin-top:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0}
+.box{border-radius:14px;padding:16px 18px;margin:14px 0;border:1px solid var(--line)}
+.warn{background:var(--warn-bg)}
+.warn strong.t{color:var(--warn);display:block;font-size:1.1rem;margin-bottom:6px}
+.red{background:var(--stop-bg)}
+.red strong.t{color:var(--stop);display:block;font-size:1.1rem;margin-bottom:6px}
+.note{background:var(--accent-bg);border-radius:12px;padding:12px 14px;margin:12px 0}
+.note a{color:var(--accent);font-weight:700}
+ul{margin:6px 0;padding-left:1.2em}
+li{margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0}
+.chips span{background:var(--accent-bg);border-radius:999px;padding:6px 14px}
+footer{margin-top:36px;color:var(--sub);font-size:.9rem;border-top:1px solid var(--line);padding-top:14px}
+footer a{color:var(--accent)}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  :root{--bg:#fff}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:16px}
+  main{max-width:none;padding:0}
+  nav{display:none}
+  .card,.box,.note{break-inside:avoid}
+  h2{break-after:avoid}
+}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>수술 받으러 입원하기 전에<br>꼭 확인하세요</h1>
+  <p>입원 전에 준비할 것과 지킬 것을 모았어요.</p>
+</header>
+
+<nav>
+  <a href="#med">먹는 약</a>
+  <a href="#diet">비만 주사</a>
+  <a href="#pack">준비물</a>
+  <a href="#off">빼고 오세요</a>
+  <a href="#change">일정 변경</a>
+</nav>
+
+<h2 id="med">1. 먹고 있는 약</h2>
+<div class="card">
+  <ul>
+    <li>고혈압 · 당뇨 · 심장질환 · 뇌혈관질환 · 녹내장 같은 <b>다른 병</b>이 있거나 <b>먹는 약</b>이 있으면, 수술 전에 <b>수술할 외과 의사와 먼저 상담</b>하세요.</li>
+    <li>다른 병원이나 다른 과에서 받은 약이 있으면 <b>입원할 때 약을 꼭 가지고 오세요.</b></li>
+  </ul>
+</div>
+
+<div class="box warn">
+  <strong class="t">⚠ 피를 묽게 하는 약</strong>
+  아스피린 · 와파린 · 플라빅스 같은 약은 <b>의사와 상의한 뒤</b> 수술 <b>3~7일 전</b>에 끊어야 해요. 며칠 전에 끊을지는 의사가 정해 드려요.
+</div>
+
+<div class="note">👉 약 끊는 날 · 다시 먹는 날 · 금식은 <a href="01.html">「수술 전에 먹는 약」 안내</a>를 보세요.</div>
+
+<h2 id="diet">2. 비만 치료 주사</h2>
+<div class="box red">
+  <strong class="t">수술 전에는 맞지 마세요</strong>
+  <ul>
+    <li><b>주 1회</b> 맞는 주사(마운자로 · 위고비 등): 수술 <b>최소 1주일 전</b>부터 끊으세요.</li>
+    <li><b>매일</b> 맞는 주사(삭센다 등): 수술 <b>전날부터</b> 끊으세요.</li>
+  </ul>
+</div>
+
+<h2 id="pack">3. 입원 준비물</h2>
+<div class="chips">
+  <span>세면도구</span><span>속옷</span><span>컵</span><span>슬리퍼</span><span>휴지</span><span>화장품</span><span>먹고 있는 약</span>
+</div>
+
+<h2 id="off">4. 꼭 빼고 오세요</h2>
+<div class="card">
+  <b>입원할 때 모두 빼고 오세요</b>
+  <ul>
+    <li>귀걸이 · 반지 · 목걸이 같은 <b>귀금속</b></li>
+    <li><b>젤네일 · 매니큐어</b> (손톱과 발톱 모두)</li>
+    <li><b>속눈썹 연장</b></li>
+  </ul>
+</div>
+<div class="card">
+  <b>수술 당일 꼭 빼 주세요</b>
+  <ul>
+    <li>가발 · 틀니 · 보청기 · 자석침 파스 · 콘택트렌즈</li>
+  </ul>
+</div>
+<div class="box warn">
+  <strong class="t">⚠ 붉은색 문신이 있나요?</strong>
+  수술할 때 <b>화상</b>이 생길 수 있어요. 꼭 <b>의료진에게 미리 말씀</b>해 주세요.
+</div>
+
+<h2 id="change">5. 수술 날짜를 바꾸거나 취소할 때</h2>
+<div class="card">
+  예정된 날보다 <b>1~2주 전에</b> 수술받을 병원 외래로 <b>전화</b>해 주세요.
+</div>
+
+<div class="note">입원하는 곳 · 시간 · 연락처는 <b>병원에서 받은 안내문</b>을 따르세요.</div>
+
+<footer>
+  이 안내는 일반적인 기준이에요. 사람마다 다를 수 있으니 담당 의사의 설명을 먼저 따르세요.<br>
+  <a href="./">다른 안내 보기</a>
+</footer>
+
+</main>
+</body>
+</html>
