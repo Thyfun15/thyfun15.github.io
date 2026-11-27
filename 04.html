@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>수술 상처 관리</title>
+<!-- 공개용. 근거: 기준표_원장님작성.md (2026-11-27 원장님 작성). 제품 이름 쓰지 않음 -->
+<style>
+:root{
+  --bg:#fbf8f3; --card:#ffffff; --ink:#1f2328; --sub:#555b63; --line:#e6e0d6;
+  --accent:#2f6f5e; --accent-bg:#e7f2ee;
+  --stop:#b4441f; --stop-bg:#fdeee7;
+  --warn:#8a5a00; --warn-bg:#fff4d6;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15181b; --card:#1e2226; --ink:#eceff1; --sub:#a9b0b7; --line:#30363c;
+    --accent:#7cc7b0; --accent-bg:#1d3530;
+    --stop:#ff9b78; --stop-bg:#3a2219;
+    --warn:#ffd27a; --warn-bg:#3a3018;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  font-size:19px;line-height:1.65;word-break:keep-all}
+main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+header h1{font-size:1.6rem;line-height:1.35;margin:8px 0 10px}
+header p{margin:0 0 6px;color:var(--sub)}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+nav a{display:inline-block;padding:8px 14px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:.9rem}
+h2{font-size:1.3rem;margin:34px 0 12px;padding-top:6px;scroll-margin-top:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0}
+.card .q{font-weight:700;margin-bottom:4px}
+.box{border-radius:14px;padding:16px 18px;margin:14px 0;border:1px solid var(--line)}
+.warn{background:var(--warn-bg)}
+.warn strong.t{color:var(--warn);display:block;font-size:1.1rem;margin-bottom:6px}
+.red{background:var(--stop-bg)}
+.red strong.t{color:var(--stop);display:block;font-size:1.1rem;margin-bottom:6px}
+.note{background:var(--accent-bg);border-radius:12px;padding:12px 14px;margin:12px 0}
+.when{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.pill{flex:1 1 140px;border-radius:10px;padding:8px 12px;background:var(--accent-bg);color:var(--accent)}
+.pill small{display:block;font-size:.8rem;opacity:.85}
+.pill b{font-size:1.05rem}
+.ok{color:var(--accent)}
+ul{margin:6px 0;padding-left:1.2em}
+li{margin:6px 0}
+footer{margin-top:36px;color:var(--sub);font-size:.9rem;border-top:1px solid var(--line);padding-top:14px}
+footer a{color:var(--accent)}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  :root{--bg:#fff}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:16px}
+  main{max-width:none;padding:0}
+  nav{display:none}
+  .card,.box,.note{break-inside:avoid}
+  h2{break-after:avoid}
+}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>수술 상처,<br>이렇게 관리하세요</h1>
+  <p>흉터는 시간이 지나면서 점점 옅어지고 부드러워져요. 처음 몇 달의 관리가 도움이 돼요.</p>
+</header>
+
+<nav>
+  <a href="#when">언제부터</a>
+  <a href="#gel">흉터 연고</a>
+  <a href="#sun">햇빛</a>
+  <a href="#massage">마사지</a>
+  <a href="#neck">스트레칭</a>
+  <a href="#normal">정상이에요</a>
+  <a href="#call">바로 연락</a>
+</nav>
+
+<h2 id="when">한눈에 보기</h2>
+<div class="when">
+  <div class="pill"><small>테이프</small><b>저절로 떨어질 때까지</b></div>
+  <div class="pill"><small>샤워</small><b>수술 5일 뒤부터</b></div>
+  <div class="pill"><small>목 스트레칭</small><b>수술 1주 뒤부터</b></div>
+  <div class="pill"><small>흉터 마사지</small><b>수술 2주 뒤부터</b></div>
+  <div class="pill"><small>흉터 연고</small><b>테이프 떨어진 뒤 · 6개월</b></div>
+  <div class="pill"><small>햇빛 가리기</small><b>수술 후 12개월</b></div>
+</div>
+
+<h2 id="gel">1. 흉터 연고 · 시트</h2>
+<div class="card"><ul>
+  <li><b>테이프가 떨어진 뒤</b>부터 써요.</li>
+  <li><b>젤</b>은 하루 2번, <b>아침 · 저녁</b>에 얇게 발라요. <b>시트</b>는 제품 설명서에 따라 붙여요.</li>
+  <li><b>6개월</b> 동안 꾸준히 써 주세요.</li>
+  <li>처방받으셔도 되고, 직접 사셔도 돼요.</li>
+</ul></div>
+
+<h2 id="sun">2. 햇빛 가리기</h2>
+<div class="card"><ul>
+  <li>수술 후 <b>12개월 동안</b> 외출할 때 흉터를 가려 주세요.</li>
+  <li><b>스카프나 목을 덮는 옷</b>으로 가려도 돼요.</li>
+  <li>상처가 완전히 아문 뒤에는 <b>SPF 30 이상</b> 자외선 차단제를 발라도 돼요.</li>
+</ul></div>
+
+<h2 id="massage">3. 흉터 마사지</h2>
+<div class="card"><ul>
+  <li>수술 <b>2주 뒤</b>부터 해요.</li>
+  <li><b>하루 2번</b>, 한 번에 몇 분씩 해 주세요.</li>
+  <li><b>손가락 끝</b>으로 흉터를 따라 <b>작은 원</b>을 그리며 부드럽게 문질러요.</li>
+</ul></div>
+
+<h2 id="neck">4. 목 스트레칭</h2>
+<div class="card"><ul>
+  <li>목이 당기고 뻣뻣하면 수술 <b>1주 뒤</b>부터 해요.</li>
+  <li><b>아프지 않은 만큼만</b> 고개를 살짝 숙이거나, 좌우로 <b>천천히</b> 돌려요.</li>
+</ul></div>
+
+<h2 id="normal">5. 「괜찮아요, 정상이에요」</h2>
+<div class="card"><div class="q">흉터가 분홍빛이고 단단하게 만져져요</div>
+  처음에는 그럴 수 있어요. 단단한 곳은 보통 <b>3~6개월</b>에 걸쳐 부드러워져요. 색은 더 천천히 옅어져요.</div>
+<div class="card"><div class="q">상처 주변 · 턱 아래 피부가 둔해요</div>
+  <b>몇 주에서 몇 달</b>에 걸쳐 서서히 좋아져요.</div>
+<div class="card"><div class="q">상처가 가려워요</div>
+  가벼운 가려움은 상처가 아무는 과정이에요.<br>
+  👉 붉은 곳이 넓어지거나 <b>열감 · 진물</b>이 같이 생기면 병원에 연락하세요.</div>
+<div class="card"><div class="q">목이 부어 보여요</div>
+  가벼운 붓기는 첫 주부터 서서히 줄어요. 수술 후 <b>4~6주</b>까지 남을 수 있어요.</div>
+<div class="card"><div class="q">삼킬 때 뭔가 걸리는 느낌이 있어요</div>
+  물과 음식을 삼킬 수 있다면, 살짝 걸리는 느낌은 <b>며칠에서 2주쯤</b> 사이에 좋아지는 경우가 많아요.<br>
+  👉 <b>삼키기가 점점 어려워지면</b> 바로 병원에 연락하세요.</div>
+<div class="card"><div class="q">배액관 뺀 자리에 진물이 묻어요</div>
+  맑거나 옅은 분홍빛 진물이 조금 묻을 수 있어요.<br>
+  👉 진물이 <b>늘거나 고름 · 냄새 · 열감</b>이 생기면 연락하세요.</div>
+
+<h2>6. 흉터가 두꺼워지는 체질이라면</h2>
+<div class="box warn"><strong class="t">⚠ 켈로이드가 생긴 적이 있나요?</strong>
+  예전에 수술 상처나 귀 뚫은 자리가 <b>두껍게 자란 적</b>이 있다면 <b>첫 외래에서 알려</b> 주세요.<br>
+  흉터가 계속 두꺼워지거나 <b>원래 상처보다 커지면</b> 외래에서 상태를 확인하고 필요한 치료를 상의하세요. 치료는 흉터 상태에 따라 달라져요.</div>
+
+<h2>7. 화장 · 목걸이 · 파마 · 염색</h2>
+<div class="card"><ul>
+  <li><b>상처 위 화장</b>: 수술 <b>2주 뒤</b>부터. 테이프가 저절로 떨어지고, 딱지나 진물 없이 피부가 <b>완전히 아문 경우에만</b> 해요.</li>
+  <li><b>목걸이</b>: 상처가 완전히 아문 뒤, 흉터에 쓸리거나 목을 조이지 않는 것부터 해요.</li>
+  <li><b>파마 · 염색</b>: 첫 외래에서 상처가 완전히 아문 것을 확인한 뒤에 해요.</li>
+</ul></div>
+
+<div class="box red" id="call">
+  <strong class="t">🚨 바로 119 또는 응급실</strong>
+  <ul>
+    <li>목이 <b>갑자기 붓고 단단해질 때</b></li>
+    <li><b>숨쉬기 어려울 때</b></li>
+    <li>침이나 물을 <b>삼키기가 갑자기 어려워질 때</b></li>
+  </ul>
+</div>
+<div class="box red">
+  <strong class="t">📞 수술한 병원에 바로 연락</strong>
+  <ul>
+    <li>상처의 <b>붉은 곳이 넓어지거나</b> 붓기 · 열감 · 통증이 심해질 때</li>
+    <li><b>38°C 이상 열</b>이나 오한이 날 때</li>
+    <li><b>고름이나 냄새</b>, 계속되는 <b>피</b>, 상처가 <b>벌어질 때</b></li>
+    <li>입 주변 · 손끝이 저려 <b>칼슘약을 3알 더 먹어도 저림이 계속되거나 근육에 쥐가 날 때</b></li>
+  </ul>
+</div>
+
+<footer>
+  이 안내는 일반적인 기준이에요. 사람마다 다를 수 있으니 담당 의사의 설명을 먼저 따르세요.<br>
+  <a href="03.html">수술 후 생활 안내</a> · <a href="./">다른 안내 보기</a>
+</footer>
+
+</main>
+</body>
+</html>
