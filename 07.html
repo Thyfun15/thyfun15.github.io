@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>갑상선 기능저하증 안내</title>
+<!-- 공개용. 원장님 확인 반영 2026-11-27. 근거: 환자용_초안.md · 수술 후 관리 안내문(증상) · 03 약 먹는 법 -->
+<style>
+:root{
+  --bg:#fbf8f3; --card:#ffffff; --ink:#1f2328; --sub:#555b63; --line:#e6e0d6;
+  --accent:#2f6f5e; --accent-bg:#e7f2ee;
+  --stop:#b4441f; --stop-bg:#fdeee7;
+  --warn:#8a5a00; --warn-bg:#fff4d6;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15181b; --card:#1e2226; --ink:#eceff1; --sub:#a9b0b7; --line:#30363c;
+    --accent:#7cc7b0; --accent-bg:#1d3530;
+    --stop:#ff9b78; --stop-bg:#3a2219;
+    --warn:#ffd27a; --warn-bg:#3a3018;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  font-size:19px;line-height:1.65;word-break:keep-all}
+main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+header h1{font-size:1.6rem;line-height:1.35;margin:8px 0 10px}
+header p{margin:0 0 6px;color:var(--sub)}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+nav a{display:inline-block;padding:8px 14px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:.9rem}
+h2{font-size:1.3rem;margin:34px 0 12px;padding-top:6px;scroll-margin-top:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0}
+.card .q{font-weight:700;margin-bottom:4px}
+.box{border-radius:14px;padding:16px 18px;margin:14px 0;border:1px solid var(--line)}
+.warn{background:var(--warn-bg)}
+.warn strong.t{color:var(--warn);display:block;font-size:1.1rem;margin-bottom:6px}
+.red{background:var(--stop-bg)}
+.red strong.t{color:var(--stop);display:block;font-size:1.1rem;margin-bottom:6px}
+.note{background:var(--accent-bg);border-radius:12px;padding:12px 14px;margin:12px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0}
+.chips span{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 12px}
+.when{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.pill{flex:1 1 140px;border-radius:10px;padding:8px 12px;background:var(--accent-bg);color:var(--accent)}
+.pill small{display:block;font-size:.8rem;opacity:.85}
+.pill b{font-size:1.05rem}
+ul{margin:6px 0;padding-left:1.2em}
+li{margin:6px 0}
+footer{margin-top:36px;color:var(--sub);font-size:.9rem;border-top:1px solid var(--line);padding-top:14px}
+footer a{color:var(--accent)}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  :root{--bg:#fff}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:16px}
+  main{max-width:none;padding:0}
+  nav{display:none}
+  .card,.box,.note{break-inside:avoid}
+  h2{break-after:avoid}
+}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>갑상선 기능저하증,<br>이렇게 관리하세요</h1>
+  <p><b>갑상선 호르몬이 모자란</b> 상태예요. 약으로 부족한 호르몬을 채우면 <b>평소처럼 생활</b>할 수 있어요.</p>
+</header>
+
+<nav>
+  <a href="#why">왜 생기나요</a>
+  <a href="#sym">증상</a>
+  <a href="#med">약 먹는 법</a>
+  <a href="#test">피검사</a>
+  <a href="#preg">임신</a>
+  <a href="#call">연락</a>
+</nav>
+
+<h2 id="why">1. 왜 생기나요?</h2>
+<div class="card"><ul>
+  <li><b>만성 갑상선염(하시모토 갑상선염)</b>: 가장 흔한 원인이에요. 면역이 갑상선을 조금씩 약하게 만들어요.</li>
+  <li><b>갑상선 수술 뒤</b>: 갑상선을 모두 떼어 냈거나, 반만 떼어 낸 뒤 남은 쪽이 호르몬을 충분히 못 만들 때</li>
+  <li><b>방사성 요오드 치료 뒤</b></li>
+</ul></div>
+
+<h2 id="sym">2. 이런 증상이 있을 수 있어요</h2>
+<div class="chips">
+  <span>😮‍💨 쉽게 피곤해요</span><span>⚖️ 체중이 늘어요</span><span>🥶 추위를 많이 타요</span>
+  <span>💧 눈꺼풀 · 손발이 부어요</span><span>😴 졸리고 집중이 안 돼요</span><span>🍽 소화불량 · 변비</span>
+  <span>😔 우울 · 감정 기복</span><span>🗣 목소리가 쉬거나 잠겨요</span>
+</div>
+<div class="note">증상이 거의 없이 <b>피검사로만</b> 알게 되는 경우도 많아요.</div>
+
+<h2>3. 어떻게 알 수 있나요?</h2>
+<div class="card"><ul>
+  <li><b>피검사</b>로 알아요. 갑상선 호르몬(FT4)과 갑상선 자극 호르몬(TSH)을 재요.</li>
+  <li>호르몬은 정상인데 TSH만 조금 높으면(<b>잠재성 저하증</b>), 바로 약을 먹지 않고 <b>지켜보기도</b> 해요.</li>
+</ul></div>
+
+<h2 id="med">4. 치료 — 갑상선 호르몬약</h2>
+<div class="card"><ul>
+  <li>몸에서 원래 만드는 호르몬과 <b>같은 성분</b>이에요. 정해진 양을 먹으면 <b>부작용 걱정이 거의 없어요.</b></li>
+  <li>갑상선을 모두 떼어 냈거나 하시모토로 생긴 저하증은 보통 <b>오래(평생)</b> 먹어요.</li>
+  <li>약을 잘 드시면 <b>특별히 가릴 음식은 없어요.</b></li>
+</ul></div>
+<div class="box warn"><strong class="t">💊 약 먹는 법</strong>
+  <ul>
+    <li><b>아침 빈속에</b> 드세요. 원칙은 <b>1시간 뒤에 식사</b>해요. 아침을 <b>거르셔도 괜찮아요.</b></li>
+    <li><b>칼슘약 · 철분제</b>는 <b>최소 4시간</b> 떨어뜨려 드세요.</li>
+    <li><b>깜빡 잊었으면</b> 생각난 때 <b>바로</b> 드세요.</li>
+  </ul></div>
+
+<h2 id="test">5. 피검사는 언제 하나요?</h2>
+<div class="when">
+  <div class="pill"><small>약을 시작하거나 양을 바꾼 뒤</small><b>6~8주 뒤</b></div>
+  <div class="pill"><small>수치가 안정되면</small><b>6개월~1년마다</b></div>
+</div>
+
+<h2 id="preg">6. 임신했다면</h2>
+<div class="box red"><strong class="t">🤰 임신을 알게 되면 바로 외래 접수하세요</strong>
+  임신하면 호르몬이 <b>더 많이</b> 필요해요. 약 양을 빨리 맞춰야 해요.</div>
+
+<div class="box red" id="call"><strong class="t">📞 이럴 땐 병원에 연락하세요</strong>
+  <ul>
+    <li>약을 먹은 뒤 <b>가슴이 두근거리고, 손이 떨리고, 살이 빠지면</b> (약이 많을 수 있어요)</li>
+    <li>약을 먹는데도 <b>증상이 점점 심해질 때</b></li>
+    <li><b>임신</b>했을 때 → 바로 외래 접수</li>
+  </ul>
+</div>
+
+<footer>
+  이 안내는 일반적인 기준이에요. 사람마다 다를 수 있으니 담당 의사의 설명을 먼저 따르세요.<br>
+  <a href="./">다른 안내 보기</a>
+</footer>
+
+</main>
+</body>
+</html>
