@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>수술 후 운동 안내</title>
+<!-- 공개용. 근거: 원장님이 준 「갑상선 수술 후 운동 안내문.docx」(2026-11-27) + 「…안내문1.docx」. 03 · 04에서 원장님이 정한 값(샤워 · 목욕탕 · 목 스트레칭 · 칼슘 3알 · 흉터 관리)이 우선. 청소년 · 등교 내용 뺌. 원장님 확인 2026-11-27: 목 스트레칭 1주 · 수영/사우나 2주 · 칼슘 3알 더 · 근력운동 2주 · 흉터 마사지 2주 뒤 하루 2번(04) -->
+<style>
+:root{
+  --bg:#fbf8f3; --card:#ffffff; --ink:#1f2328; --sub:#555b63; --line:#e6e0d6;
+  --accent:#2f6f5e; --accent-bg:#e7f2ee;
+  --stop:#b4441f; --stop-bg:#fdeee7;
+  --em:#ffffff; --em-bg:#c0392b;
+  --warn:#8a5a00; --warn-bg:#fff4d6;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15181b; --card:#1e2226; --ink:#eceff1; --sub:#a9b0b7; --line:#30363c;
+    --accent:#7cc7b0; --accent-bg:#1d3530;
+    --stop:#ff9b78; --stop-bg:#3a2219;
+    --em:#ffffff; --em-bg:#a93226;
+    --warn:#ffd27a; --warn-bg:#3a3018;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  font-size:19px;line-height:1.65;word-break:keep-all}
+main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+header h1{font-size:1.6rem;line-height:1.35;margin:8px 0 10px}
+header p{margin:0 0 6px;color:var(--sub)}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+nav a{display:inline-block;padding:8px 14px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:.9rem}
+h2{font-size:1.3rem;margin:34px 0 12px;padding-top:6px;scroll-margin-top:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0}
+.card .q{font-weight:700;margin-bottom:4px}
+.box{border-radius:14px;padding:16px 18px;margin:14px 0;border:1px solid var(--line)}
+.warn{background:var(--warn-bg)}
+.warn strong.t{color:var(--warn);display:block;font-size:1.1rem;margin-bottom:6px}
+.red{background:var(--stop-bg)}
+.red strong.t{color:var(--stop);display:block;font-size:1.1rem;margin-bottom:6px}
+.em{background:var(--em-bg);color:var(--em);border:none}
+.em strong.t{display:block;font-size:1.15rem;margin-bottom:6px}
+.note{background:var(--accent-bg);border-radius:12px;padding:12px 14px;margin:12px 0}
+.note a,.card a{color:var(--accent);font-weight:700}
+.stage{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:12px;padding:12px 16px;margin:10px 0}
+.stage .h{font-weight:800;font-size:1.05rem}
+.stage .ok{margin:6px 0 2px}.stage .ok b{color:var(--accent)}
+.stage .no b{color:var(--stop)}
+.faq .q{font-weight:700}
+ul{margin:6px 0;padding-left:1.2em}
+li{margin:6px 0}
+footer{margin-top:36px;color:var(--sub);font-size:.9rem;border-top:1px solid var(--line);padding-top:14px}
+footer a{color:var(--accent)}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  :root{--bg:#fff}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:15px}
+  main{max-width:none;padding:0}
+  nav{display:none}
+  .card,.box,.note,.stage{break-inside:avoid}
+  h2{break-after:avoid}
+}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>수술 뒤 운동,<br>이렇게 다시 시작하세요</h1>
+  <p>일찍부터 <b>가볍게 움직일수록</b> 회복이 빠르고 합병증이 줄어요. 다만 목 상처가 아무는 동안에는 <b>한 단계씩</b> 늘려 가요.</p>
+</header>
+
+<nav>
+  <a href="#rule">3가지 원칙</a>
+  <a href="#stage">시기별</a>
+  <a href="#neck">목 운동</a>
+  <a href="#walk">걷기</a>
+  <a href="#avoid">피할 것</a>
+  <a href="#call">멈추고 연락</a>
+</nav>
+
+<h2 id="rule">3가지 원칙</h2>
+<div class="card"><ul>
+  <li>🚶 <b>수술 당일부터 걸어요.</b> 의료진이 일어나도 된다고 하면 걸으세요. 혈전 · 폐렴 · 장 운동 저하를 막는 가장 확실한 방법이에요. 처음 일어날 때 어지러우면 도움을 받으세요.</li>
+  <li>🙆 <b>목은 아프지 않은 만큼만</b> 부드럽게 움직여요. 당기는 느낌이 시작되는 곳까지만 하고, 아프면 멈춰요.</li>
+  <li>🏋️ <b>힘주기 · 무거운 물건 들기는 천천히</b> 돌아가요. 목 · 어깨에 힘이 들어가는 동작은 상처가 안정된 뒤에 해요.</li>
+</ul></div>
+<div class="note">수술 범위(반절제 · 전절제 · <b>림프절 청소술</b>)와 방법에 따라 달라질 수 있어요. 담당 의료진이 따로 말씀드린 내용이 있으면 <b>그것이 먼저</b>예요.</div>
+
+<h2 id="stage">시기별 운동</h2>
+<div class="stage"><div class="h">수술 당일 ~ 퇴원</div>
+  <div class="ok"><b>해도 돼요</b> 병실 안 걷기(하루 4~5번, 5~10분), 심호흡, 발목 돌리기</div>
+  <div class="no"><b>피하세요</b> 목을 크게 돌리거나 젖히기, 갑자기 일어나기</div></div>
+<div class="stage"><div class="h">퇴원 ~ 2주</div>
+  <div class="ok"><b>해도 돼요</b> 평지 걷기(하루 2~3번, 20~30분), 가벼운 집안일, 목 스트레칭(수술 1주 뒤부터)</div>
+  <div class="no"><b>피하세요</b> 5kg 넘게 들기, 달리기 · 점프, 숨을 참고 힘주는 운동, 목을 뒤로 젖힌 자세 오래 하기, 목욕탕 · 사우나 · 찜질방</div></div>
+<div class="stage"><div class="h">2 ~ 4주</div>
+  <div class="ok"><b>해도 돼요</b> 빠르게 걷기, 실내 자전거, 가벼운 스트레칭, <b>가벼운 근력운동</b>(평소 무게의 절반 이하, 맨몸 운동) → <a href="11-1.html">집에서 하는 운동</a></div>
+  <div class="no"><b>피하세요</b> 숨을 참고 힘주는 운동, 윗몸일으키기처럼 목 · 배에 세게 힘이 들어가는 운동</div></div>
+<div class="stage"><div class="h">4 ~ 6주</div>
+  <div class="ok"><b>해도 돼요</b> 조깅, 수영, 등산, 근력운동 무게를 조금씩 늘리기</div>
+  <div class="no"><b>피하세요</b> 아주 무거운 무게 운동, 목에 체중이 실리는 자세(어깨 서기 · 물구나무)</div></div>
+<div class="stage"><div class="h">6주 뒤</div>
+  <div class="ok"><b>해도 돼요</b> 대부분 평소 운동으로 돌아가요</div>
+  <div class="no"><b>먼저 확인</b> 축구 · 농구 · 격투기 같은 부딪히는 운동, 골프 · 테니스 같은 스윙 운동은 외래에서 확인한 뒤</div></div>
+<div class="note"><b>림프절 청소술</b>을 받았다면 각 시기를 <b>1~2주 늦게</b> 잡고, 어깨 운동은 담당의 안내를 따르세요.<br>
+통증 · 목 당김 · 숨참 · 두근거림이 생기면 그 단계를 멈추고 <b>한 단계 아래로</b> 돌아가세요.</div>
+
+<h2 id="neck">목 · 어깨 스트레칭</h2>
+<div class="card">
+  <b>수술 1주 뒤부터</b>, 앉거나 서서 어깨 힘을 빼고 해요. <b>하루 3번</b>, 동작마다 <b>5~10번</b>, 한 번에 <b>3~5초</b> 멈춰요.
+  <ul>
+    <li><b>턱 당기기</b>: 고개를 숙여 턱을 가슴 쪽으로 천천히 내렸다 올려요.</li>
+    <li><b>좌우 돌리기</b>: 고개를 어깨 쪽으로 천천히 돌려요.</li>
+    <li><b>옆으로 기울이기</b>: 귀를 어깨 쪽으로. 어깨가 올라가지 않게 해요.</li>
+    <li><b>뒤로 젖히기</b>: 처음 2주는 시선이 <b>천장을 보지 않을 만큼만</b>. 당김이 없으면 조금씩 늘려요.</li>
+    <li><b>어깨 돌리기</b>: 어깨를 뒤로 크게 원을 그리며 10번.</li>
+    <li><b>어깨 으쓱</b>: 어깨를 귀 쪽으로 올렸다 천천히 내려요.</li>
+  </ul>
+  반동을 주거나 손으로 목을 눌러 당기지 마세요. 심하게 당기거나 어지러우면 쉬었다가 다음 날 다시 해요.
+</div>
+
+<h2 id="walk">걷기</h2>
+<div class="card"><ul>
+  <li>수술 뒤 첫 달의 <b>기본 운동</b>이에요. 세기는 <b>말은 할 수 있지만 노래는 어려운</b> 정도예요.</li>
+  <li>퇴원 뒤 하루 2~3번, 20~30분 평지를 걸어요. 힘들지 않으면 <b>일주일에 5~10분씩</b> 늘리고, 2주 뒤부터 속도를 올려요.</li>
+  <li>시선은 정면, 어깨 힘을 빼고 팔을 자연스럽게. 목을 앞으로 빼지 마세요.</li>
+  <li>가방은 한쪽 어깨보다 <b>가벼운 배낭</b>(5kg 미만)이 나아요.</li>
+  <li>땀이 상처에 차면 깨끗한 수건으로 <b>살짝 눌러</b> 닦고 말리세요.</li>
+</ul></div>
+
+<h2 id="avoid">피할 동작 · 언제부터</h2>
+<p style="margin:0 0 8px;color:var(--sub)">힘을 주면 목 정맥 압력이 올라 수술 부위에 <b>피가 고일</b> 수 있어요. 특히 첫 1~2주가 중요해요.</p>
+<div class="card"><div class="q">5kg 넘게 들기 (장보기 · 아이 안기)</div>2주 동안 피하고, 2~4주에 걸쳐 <b>천천히</b></div>
+<div class="card"><div class="q">숨 참고 힘주기 (매달리기 · 역도 · 윗몸일으키기), 변비로 심하게 힘주기</div>4~6주 뒤</div>
+<div class="card"><div class="q">목을 뒤로 크게 젖히기 (미용실 샴푸대 · 요가 뒤로 젖히기)</div>2~4주 뒤 짧게 — 흉터가 넓어질 수 있어요</div>
+<div class="card"><div class="q">물구나무 · 어깨 서기 · 거꾸로 매달리기</div>6주 뒤 외래 확인 뒤</div>
+<div class="card"><div class="q">수영 · 목욕탕 · 사우나</div>수술 2주 뒤부터, <b>상처가 완전히 아물고 진물이 없을 때</b></div>
+<div class="card"><div class="q">골프 · 테니스 · 부딪히는 운동</div>6주 뒤 외래 확인 뒤</div>
+<div class="note">흉터 관리(연고 · 시트 · 마사지 · 햇빛 가리기)는 <a href="04.html">상처 관리 안내</a>를 보세요.</div>
+
+<h2>약을 먹는 중이라면</h2>
+<div class="card"><ul>
+  <li>운동 때문에 약을 <b>거르지 마세요.</b> 갑상선약은 아침 빈속에, 칼슘약 · 철분제와 4시간 떨어뜨려요.</li>
+  <li>수술 직후 <b>입 주변 · 손끝 저림, 쥐</b>가 운동 중에 더 심해질 수 있어요. 그러면 <b>운동을 멈추고</b>, 처방받은 칼슘약을 먹어도 계속 저리면 <b>3알 더</b> 드세요. 그래도 계속되면 바로 연락하세요.</li>
+  <li>전절제 뒤 약 양을 맞추는 <b>6~8주</b> 동안은 피로 · 숨참 · 두근거림이 생길 수 있어요. 외래에서 말씀해 주세요.</li>
+  <li>방사성 요오드 치료 앞뒤 격리 기간에는 <b>헬스장 · 수영장 같은 공용 시설</b>을 피하세요.</li>
+  <li>림프절 청소술 뒤 <b>어깨가 처지거나 팔을 올리기 어려우면</b> 알려 주세요. 재활 운동을 안내받을 수 있어요.</li>
+</ul></div>
+
+<div class="box em" id="call"><strong class="t">🚨 운동을 멈추고 바로 119 · 응급실</strong>
+  <span style="font-size:.9rem">(수술 뒤 첫 24~48시간이 특히 중요해요)</span>
+  <ul>
+    <li>목이 <b>갑자기 붓거나 단단해지고</b>, 숨쉴 때 답답하거나 쌕쌕 소리가 날 때</li>
+    <li>목이 부어 <b>삼키기 어려울 때</b></li>
+    <li><b>심한 숨참 · 가슴 통증 · 의식 저하</b></li>
+    <li>손발이 <b>굳듯이 뒤틀리는 심한 경련</b>, 입 주변 · 손끝이 심하게 저릴 때</li>
+  </ul>
+</div>
+<div class="box red"><strong class="t">📞 그날 바로 외래에 연락</strong>
+  <ul>
+    <li>상처가 <b>붉고 뜨겁거나 고름 · 진물</b>, 38℃ 이상 열</li>
+    <li>목소리가 <b>점점 쉬거나</b> 물 마실 때 <b>사레</b>가 들릴 때</li>
+    <li>칼슘약을 더 먹어도 <b>저림이 계속되거나 쥐</b>가 날 때</li>
+    <li><b>한쪽 다리가 붓고 아플 때</b> (다리 혈전일 수 있어요)</li>
+    <li>쉬어도 가라앉지 않는 <b>두근거림</b>, 쉬어도 계속되는 상처 통증</li>
+  </ul>
+</div>
+
+<h2>자주 묻는 질문</h2>
+<div class="card faq"><div class="q">Q. 헬스장은 언제부터 가요?</div>
+  가벼운 유산소와 근력운동 모두 <b>2주</b> 뒤부터예요. 무게는 평소의 <b>절반 이하</b>로 시작하고, 통증 · 붓기가 없으면 조금씩 늘리세요.</div>
+<div class="card faq"><div class="q">Q. 운동하면 흉터가 커지나요?</div>
+  상처가 자꾸 당겨지면 넓어질 수 있어요. 처음 2~4주에 목을 젖히는 동작과 어깨에 힘이 들어가는 운동을 피하면 도움이 돼요.</div>
+<div class="card faq"><div class="q">Q. 수술 뒤 살이 쪘는데 운동으로 빼면 되나요?</div>
+  호르몬 양이 맞지 않으면 체중이 변할 수 있어요. <b>피검사 결과를 먼저</b> 확인하고 운동 세기를 정하세요.</div>
+<div class="card faq"><div class="q">Q. 목이 뻐근하고 삼키기 불편해요. 정상인가요?</div>
+  붓기와 유착 때문에 그럴 수 있고 <b>몇 달에 걸쳐</b> 좋아지는 경우가 많아요. 가벼운 목 스트레칭이 도움이 돼요.</div>
+
+<footer>
+  이 안내는 일반적인 기준이에요. 사람마다 다를 수 있으니 담당 의사의 설명을 먼저 따르세요.<br>
+  <a href="11-1.html">평소 집에서 하는 운동</a> · <a href="03.html">수술 후 생활</a> · <a href="./">다른 안내 보기</a>
+</footer>
+
+</main>
+</body>
+</html>

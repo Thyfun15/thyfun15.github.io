@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>집에서 하는 운동</title>
+<!-- 공개용. 원장님 요청(2026-11-27): 평소에는 까치발 들기 · 벽 짚고 팔굽혀펴기 · 집 스쿼트 중심. 횟수 · 세트는 일반 기준 — 원장님 검수 전 -->
+<style>
+:root{
+  --bg:#fbf8f3; --card:#ffffff; --ink:#1f2328; --sub:#555b63; --line:#e6e0d6;
+  --accent:#2f6f5e; --accent-bg:#e7f2ee;
+  --stop:#b4441f; --stop-bg:#fdeee7;
+  --warn:#8a5a00; --warn-bg:#fff4d6;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15181b; --card:#1e2226; --ink:#eceff1; --sub:#a9b0b7; --line:#30363c;
+    --accent:#7cc7b0; --accent-bg:#1d3530;
+    --stop:#ff9b78; --stop-bg:#3a2219;
+    --warn:#ffd27a; --warn-bg:#3a3018;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  font-size:19px;line-height:1.65;word-break:keep-all}
+main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+header h1{font-size:1.6rem;line-height:1.35;margin:8px 0 10px}
+header p{margin:0 0 6px;color:var(--sub)}
+h2{font-size:1.3rem;margin:34px 0 12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0}
+.ex{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:16px 0}
+.ex h2{margin:0 0 4px}
+.ex .why{color:var(--sub);margin:0 0 10px}
+.ex svg{display:block;margin:6px auto 10px;max-width:240px;width:100%;height:auto}
+.ex ol{margin:6px 0;padding-left:1.3em}
+.ex li{margin:6px 0}
+.dose{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 4px}
+.dose span{flex:1 1 120px;background:var(--accent-bg);color:var(--accent);border-radius:10px;padding:8px 10px;text-align:center}
+.dose b{display:block;font-size:1.1rem}
+.easy{font-size:.92rem;color:var(--sub);margin-top:8px}
+.box{border-radius:14px;padding:16px 18px;margin:14px 0;border:1px solid var(--line)}
+.warn{background:var(--warn-bg)}
+.warn strong.t{color:var(--warn);display:block;font-size:1.1rem;margin-bottom:6px}
+.red{background:var(--stop-bg)}
+.red strong.t{color:var(--stop);display:block;font-size:1.1rem;margin-bottom:6px}
+.note{background:var(--accent-bg);border-radius:12px;padding:12px 14px;margin:12px 0}
+.note a{color:var(--accent);font-weight:700}
+.fig{stroke:var(--ink);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.head{fill:var(--ink)}
+.ground{stroke:var(--sub);stroke-width:3}
+.arrow{stroke:var(--accent);stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.wall{fill:var(--line)}
+ul{margin:6px 0;padding-left:1.2em}
+li{margin:6px 0}
+footer{margin-top:36px;color:var(--sub);font-size:.9rem;border-top:1px solid var(--line);padding-top:14px}
+footer a{color:var(--accent)}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  :root{--bg:#fff}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:15px}
+  main{max-width:none;padding:0}
+  .ex,.card,.box,.note{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>집에서 하는 운동 3가지</h1>
+  <p>기구 없이, 벽과 의자만 있으면 돼요. <b>다리 · 팔 · 몸통 힘</b>을 기르고 <b>넘어지지 않는 몸</b>을 만들어요.</p>
+</header>
+
+<div class="note">갑상선 수술을 받았다면 <b>수술 2주 뒤</b>부터 가볍게 시작하세요. 시기는 <a href="11.html">수술 후 운동 안내</a>를 먼저 보세요.</div>
+
+<!-- 1. 까치발 -->
+<div class="ex">
+  <h2>① 까치발 들기</h2>
+  <p class="why">종아리 힘 · 균형 · 다리 혈액순환에 좋아요.</p>
+  <svg viewBox="0 0 240 170" role="img" aria-label="의자 등받이를 잡고 까치발을 드는 모습">
+    <rect class="wall" x="150" y="70" width="10" height="85" rx="3"/>
+    <line class="fig" x1="150" y1="72" x2="190" y2="72"/>
+    <line class="ground" x1="20" y1="158" x2="220" y2="158"/>
+    <circle class="head" cx="95" cy="28" r="13"/>
+    <path class="fig" d="M95 42 L95 100 M95 58 L150 74 M95 100 L90 135 L96 150 M95 100 L104 135 L108 150"/>
+    <path class="arrow" d="M60 140 L60 105 M50 115 L60 105 L70 115"/>
+  </svg>
+  <ol>
+    <li>의자 등받이나 벽을 <b>가볍게 잡고</b> 발을 어깨너비로 서요.</li>
+    <li><b>천천히</b> 발뒤꿈치를 최대한 들어요. 2초 멈춰요.</li>
+    <li>천천히 내려요. 숨은 <b>참지 말고</b> 내쉬면서 올려요.</li>
+  </ol>
+  <div class="dose"><span>횟수<b>10~15번</b></span><span>세트<b>2~3세트</b></span><span>얼마나 자주<b>매일</b></span></div>
+  <div class="easy">💡 쉽게: 의자에 앉아서 발뒤꿈치 들기 · 💪 어렵게: 한 발씩</div>
+</div>
+
+<!-- 2. 벽 팔굽혀펴기 -->
+<div class="ex">
+  <h2>② 벽 짚고 팔굽혀펴기</h2>
+  <p class="why">가슴 · 팔 · 어깨 힘을 무리 없이 길러요.</p>
+  <svg viewBox="0 0 240 170" role="img" aria-label="벽을 짚고 팔굽혀펴기를 하는 모습">
+    <rect class="wall" x="196" y="10" width="14" height="148" rx="3"/>
+    <line class="ground" x1="20" y1="158" x2="220" y2="158"/>
+    <circle class="head" cx="140" cy="44" r="13"/>
+    <path class="fig" d="M130 56 L72 150 M120 72 L160 70 L196 70 M118 76 L158 86 L196 84"/>
+    <path class="fig" d="M72 150 L60 150"/>
+    <path class="arrow" d="M150 112 L178 112 M170 104 L178 112 L170 120"/>
+  </svg>
+  <ol>
+    <li>벽에서 <b>한 걸음 반</b> 떨어져 서요. 손바닥을 어깨 높이 · 어깨너비로 벽에 대요.</li>
+    <li>몸을 <b>곧게</b> 유지한 채 팔을 굽혀 가슴을 벽 쪽으로 천천히 가져가요.</li>
+    <li>벽을 밀며 <b>숨을 내쉬고</b> 돌아와요.</li>
+  </ol>
+  <div class="dose"><span>횟수<b>10~15번</b></span><span>세트<b>2~3세트</b></span><span>얼마나 자주<b>주 2~3일</b></span></div>
+  <div class="easy">💡 쉽게: 벽에 더 가까이 · 💪 어렵게: 식탁이나 튼튼한 책상 짚고</div>
+</div>
+
+<!-- 3. 스쿼트 -->
+<div class="ex">
+  <h2>③ 의자 스쿼트</h2>
+  <p class="why">허벅지 · 엉덩이 힘 — 일어서기 · 계단 오르기가 쉬워져요.</p>
+  <svg viewBox="0 0 240 170" role="img" aria-label="의자 앞에서 앉았다 일어나는 스쿼트 모습">
+    <path class="fig" d="M40 100 L80 100 L80 158 M40 100 L40 158 M40 100 L40 55" style="stroke:var(--sub)"/>
+    <line class="ground" x1="20" y1="158" x2="220" y2="158"/>
+    <circle class="head" cx="128" cy="40" r="13"/>
+    <path class="fig" d="M124 54 L104 100 M118 66 L160 78 M104 100 L140 112 L138 156 M104 100 L132 118 L126 156"/>
+    <path class="arrow" d="M190 130 L190 70 M180 80 L190 70 L200 80"/>
+  </svg>
+  <ol>
+    <li>의자 앞에 서서 발을 어깨너비로 벌려요. 팔은 앞으로 뻗어요.</li>
+    <li>엉덩이를 <b>뒤로 빼며</b> 의자에 앉듯 천천히 내려가요. <b>무릎이 발끝보다 너무 앞으로</b> 나가지 않게 해요.</li>
+    <li>의자에 살짝 닿으면 발바닥으로 밀며 <b>숨을 내쉬고</b> 일어나요.</li>
+  </ol>
+  <div class="dose"><span>횟수<b>10~15번</b></span><span>세트<b>2~3세트</b></span><span>얼마나 자주<b>주 2~3일</b></span></div>
+  <div class="easy">💡 쉽게: 의자에 완전히 앉았다 일어나기 · 💪 어렵게: 의자에 닿기 직전 멈추기</div>
+</div>
+
+<h2>이렇게 하면 더 좋아요</h2>
+<div class="card"><ul>
+  <li><b>숨을 참지 마세요.</b> 힘줄 때 내쉬어요. 숨을 참으면 혈압이 오르고 목에 힘이 들어가요.</li>
+  <li><b>천천히</b> 하세요. 빠르게 많이 하는 것보다 바른 자세로 천천히 하는 게 좋아요.</li>
+  <li>근력운동은 <b>주 2일 이상</b>, 걷기 같은 유산소 운동은 <b>일주일에 150분</b>(하루 30분 × 5일)을 목표로 해요.</li>
+  <li>세트 사이에 <b>1분</b> 쉬어요. 다음 날 근육이 조금 뻐근한 건 괜찮아요.</li>
+  <li>달력에 했는지 <b>표시</b>해 보세요. 꾸준함이 가장 중요해요.</li>
+</ul></div>
+
+<div class="box warn"><strong class="t">⚠ 이럴 땐 쉬거나 먼저 상의하세요</strong>
+  <ul>
+    <li>갑상선 호르몬 양을 맞추는 중이라 <b>두근거림이 심할 때</b></li>
+    <li>무릎 · 허리 · 어깨가 <b>아플 때</b> — 통증 없는 범위로 줄이세요</li>
+    <li>어지럼이 잦거나 <b>잘 넘어지는 분</b> — 꼭 잡을 곳이 있는 곳에서</li>
+  </ul>
+</div>
+
+<div class="box red"><strong class="t">🛑 바로 멈추세요</strong>
+  가슴 통증 · 심한 숨참 · 어지럼 · 심한 두근거림이 생기면 운동을 멈추고 쉬세요. 쉬어도 좋아지지 않으면 <b>119</b>에 연락하세요.
+</div>
+
+<footer>
+  이 안내는 일반적인 기준이에요. 사람마다 다를 수 있으니 담당 의사의 설명을 먼저 따르세요.<br>
+  <a href="11.html">수술 후 운동</a> · <a href="./">다른 안내 보기</a>
+</footer>
+
+</main>
+</body>
+</html>
