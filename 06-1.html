@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>저요오드 식사 안내</title>
+<!-- 공개용. 근거: 원장님 팀 저용량 RAI 안내서 16~25쪽(저요오드식 · 허용/제한 식품 · 식단 예). 상표 이름은 일반 이름으로 바꿈 -->
+<style>
+:root{
+  --bg:#fbf8f3; --card:#ffffff; --ink:#1f2328; --sub:#555b63; --line:#e6e0d6;
+  --accent:#2f6f5e; --accent-bg:#e7f2ee;
+  --stop:#b4441f; --stop-bg:#fdeee7;
+  --warn:#8a5a00; --warn-bg:#fff4d6;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15181b; --card:#1e2226; --ink:#eceff1; --sub:#a9b0b7; --line:#30363c;
+    --accent:#7cc7b0; --accent-bg:#1d3530;
+    --stop:#ff9b78; --stop-bg:#3a2219;
+    --warn:#ffd27a; --warn-bg:#3a3018;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  font-size:19px;line-height:1.65;word-break:keep-all}
+main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+header h1{font-size:1.6rem;line-height:1.35;margin:8px 0 10px}
+header p{margin:0 0 6px;color:var(--sub)}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+nav a{display:inline-block;padding:8px 14px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:.9rem}
+h2{font-size:1.3rem;margin:34px 0 12px;padding-top:6px;scroll-margin-top:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0}
+.box{border-radius:14px;padding:16px 18px;margin:14px 0;border:1px solid var(--line)}
+.warn{background:var(--warn-bg)}
+.warn strong.t{color:var(--warn);display:block;font-size:1.1rem;margin-bottom:6px}
+.note{background:var(--accent-bg);border-radius:12px;padding:12px 14px;margin:12px 0}
+.grp{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:12px 0}
+.grp h3{margin:0 0 8px;font-size:1.1rem}
+.two{display:flex;gap:8px;flex-wrap:wrap}
+.ok,.no{flex:1 1 220px;border-radius:10px;padding:8px 12px}
+.ok{background:var(--accent-bg)}
+.no{background:var(--stop-bg)}
+.ok b{color:var(--accent)} .no b{color:var(--stop)}
+.ok ul,.no ul{margin:4px 0;padding-left:1.1em}
+.tip{font-size:.88rem;color:var(--sub);margin-top:6px}
+ul{margin:6px 0;padding-left:1.2em}
+li{margin:5px 0}
+footer{margin-top:36px;color:var(--sub);font-size:.9rem;border-top:1px solid var(--line);padding-top:14px}
+footer a{color:var(--accent)}
+@media print{
+  @page{size:A4;margin:12mm 12mm}
+  :root{--bg:#fff}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:15px}
+  main{max-width:none;padding:0}
+  nav{display:none}
+  .card,.box,.note,.grp{break-inside:avoid}
+  h2{break-after:avoid}
+}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>저요오드 식사,<br>어렵지 않아요</h1>
+  <p>방사성 요오드 치료 <b>2주 전부터</b> 해요. 몸에 요오드가 적어야 치료 약이 남은 갑상선 세포에 잘 들어가요.</p>
+</header>
+
+<nav>
+  <a href="#rule">기본 원칙</a>
+  <a href="#list">먹어도 되는 것 · 피할 것</a>
+  <a href="#cook">이렇게 만들어요</a>
+  <a href="#menu">하루 식단 예</a>
+</nav>
+
+<h2 id="rule">1. 기본 원칙</h2>
+<div class="box warn"><strong class="t">꼭 피하세요</strong>
+  <ul>
+    <li><b>해조류</b>: 미역 · 다시마 · 김 · 파래 · 톳</li>
+    <li><b>바다 음식</b>: 생선 · 조개 · 멸치 · 오징어 · 젓갈 · 액젓</li>
+    <li><b>우유 · 유제품</b>: 우유 · 치즈 · 요구르트 · 아이스크림</li>
+    <li><b>달걀 노른자</b> (흰자는 괜찮아요)</li>
+    <li><b>천일염 · 죽염 · 구운 소금 · 꽃소금 · 수입 소금</b>, 그리고 이 소금으로 담근 김치 · 장아찌 · 집 된장 · 집 간장</li>
+    <li><b>다시마 · 멸치 국물</b>, 라면 · 우동 국물</li>
+    <li><b>가공식품 · 수입식품 · 인스턴트 · 패스트푸드</b>, 외식</li>
+    <li><b>붉은 색소</b>가 든 사탕 · 음료 · 과자</li>
+    <li>요오드가 든 <b>영양제 · 종합비타민 · 건강식품 · 한약</b></li>
+  </ul></div>
+<div class="note">🧂 간은 <b>정제염(90% 이상) · 맛소금 · 무요오드 소금</b>으로 하세요.<br>
+  정제염으로 만든 <b>시판 간장 · 고추장 · 된장</b>은 드셔도 돼요.<br>
+  김치는 <b>정제염으로 따로</b> 담그고, 젓갈 · 액젓 없이 파 · 마늘 · 생강 · 고춧가루로 양념하세요.</div>
+
+<h2 id="list">2. 먹어도 되는 것 · 피할 것</h2>
+
+<div class="grp"><h3>🍚 곡류</h3><div class="two">
+  <div class="ok"><b>먹어도 돼요</b><ul><li>쌀 · 잡곡(국산) · 밀가루</li><li>껍질 벗긴 감자 · 고구마 · 옥수수</li><li>정제 소금으로 만든 떡</li><li>식빵(하루 한 끼 이내)</li></ul></div>
+  <div class="no"><b>피하세요</b><ul><li>라면 · 인스턴트 우동</li><li>우유 · 달걀 든 과자, 시리얼</li><li>껍질째 익힌 감자 · 고구마</li><li>보리 · 호밀 · 시판 빵 · 우유 식빵</li></ul></div>
+</div><div class="tip">외국산 쌀은 요오드가 많을 수 있어요. 국산을 드세요.</div></div>
+
+<div class="grp"><h3>🥩 고기 · 콩</h3><div class="two">
+  <div class="ok"><b>먹어도 돼요</b><ul><li>소 · 돼지 · 닭 · 양고기 (하루 <b>150g 이하</b>)</li><li>두부(국산 콩) · 콩(국산)</li><li>달걀 <b>흰자</b></li></ul></div>
+  <div class="no"><b>피하세요</b><ul><li>모든 생선 · 조개 · 해산물</li><li>오징어포 · 쥐포 같은 건어물</li><li>햄 · 베이컨 · 통조림 · 훈제 고기</li><li>달걀 <b>노른자</b></li><li>천일염 쓴 두부 · 젓갈</li></ul></div>
+</div><div class="tip">민물 생선도 자료가 없어 피해요. 사골국 같은 진한 국물은 일주일에 2번쯤만.</div></div>
+
+<div class="grp"><h3>🥬 채소 · 과일</h3><div class="two">
+  <div class="ok"><b>먹어도 돼요</b><ul><li>아래 「피하세요」 말고 모든 채소</li><li>껍질 · 씨 빼고 먹는 과일: 사과 · 포도 · 참외 · 복숭아 · 수박 · 배</li><li>오렌지 주스 · 파인애플 주스</li></ul></div>
+  <div class="no"><b>피하세요</b><ul><li>김 · 미역 · 파래 · 다시마</li><li>천일염으로 담근 김치 · 장아찌</li><li>과일 · 채소 통조림</li><li>매실 같은 농축 엑기스 · 즙</li></ul></div>
+</div></div>
+
+<div class="grp"><h3>🥛 우유</h3><div class="two">
+  <div class="ok"><b>먹어도 돼요</b><ul><li>없음</li></ul></div>
+  <div class="no"><b>피하세요</b><ul><li>우유 · 치즈 · 아이스크림 · 요구르트 · 생크림</li><li>두유와 그 가공품</li></ul></div>
+</div></div>
+
+<div class="grp"><h3>🧄 양념</h3><div class="two">
+  <div class="ok"><b>먹어도 돼요</b><ul><li>정제 소금 · 맛소금 · 무요오드 소금</li><li>정제염으로 만든 된장 · 고추장 · 간장</li><li>식용유 · 참기름 · 올리브유</li><li>설탕 · 물엿 · 식초 · 파 · 마늘 · 생강 · 깨 · 고춧가루 · 후추 · 겨자 · 와사비 · 토마토케첩</li></ul></div>
+  <div class="no"><b>피하세요</b><ul><li>천일염 · 죽염 · 구운 소금 · 꽃소금 · 기능성 소금 · 수입 소금</li><li>천일염으로 만든 장</li><li>화학조미료</li><li>마요네즈와 마요네즈 든 드레싱</li><li>짠 버터 · 마가린</li></ul></div>
+</div></div>
+
+<div class="grp"><h3>☕ 그 밖에</h3><div class="two">
+  <div class="ok"><b>먹어도 돼요</b><ul><li>견과류(소금 안 친 것)</li><li>탄산음료 · 이온음료 · 녹차</li><li>우유 안 넣은 원두커피</li><li>꿀</li></ul></div>
+  <div class="no"><b>피하세요</b><ul><li>붉은 색소 든 음료</li><li>소금 친 견과류 · 스낵</li><li>초콜릿</li><li>다시마환 · 상황버섯 · 차가버섯 · 인삼 · 홍삼 같은 건강식품, 한약</li><li>프림 커피 · 케이크 · 도넛 · 머핀 · 피자 · 비스킷 · 팝콘</li></ul></div>
+</div><div class="tip">저요오드 식사를 하는 2주 동안은 술을 드시지 마세요.</div></div>
+
+<h2 id="cook">3. 이렇게 만들어요</h2>
+<div class="card"><ul>
+  <li>모든 음식의 간은 <b>정제염 · 맛소금 · 무요오드 소금</b>으로 하세요.</li>
+  <li>맛은 설탕 · 식초 · 파 · 마늘 · 생강 · 깨 · 고춧가루 · 겨자 · 후추 · 와사비 · 케첩 · 식물성 기름으로 내세요.</li>
+  <li>국은 <b>다시마 · 멸치 육수 없이</b> 끓이세요. 고기 육수나 채소 육수를 쓰세요.</li>
+  <li>샐러드 드레싱은 <b>마요네즈 없는 것</b>(간장 · 레몬 · 과일 드레싱)을 쓰세요.</li>
+  <li>요오드가 적은 음식도 너무 많이 먹으면 많아질 수 있어요. <b>골고루</b> 드세요.</li>
+</ul></div>
+
+<h2 id="menu">4. 하루 식단 예</h2>
+<div class="card">
+  <b>아침</b> 누룽지 · 모닝빵 · 달걀 흰자 스크램블 · 양상추 샐러드 · 딸기잼<br>
+  <b>점심</b> 현미밥 · 버섯불고기 · 애호박나물 · 두부조림 · 물김치(정제염) · 오렌지 주스<br>
+  <b>저녁</b> 잡곡밥 · 배추된장국 · 고기완자조림 · 참나물무침 · 새송이볶음 · 무김치(정제염)
+</div>
+
+<div class="note">치료가 끝나고 <b>저요오드 식사 기간이 끝난 다음 날부터</b> 평소대로 드셔도 돼요.</div>
+
+<footer>
+  이 안내는 일반적인 기준이에요. 사람마다 다를 수 있으니 담당 의사의 설명을 먼저 따르세요.<br>
+  <a href="06.html">방사성 요오드 치료 안내</a> · <a href="./">다른 안내 보기</a>
+</footer>
+
+</main>
+</body>
+</html>
