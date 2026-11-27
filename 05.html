@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>언제 병원에 연락할까</title>
+<!-- 공개용. 근거: 03 · 04 원장님 기준(2026-11-27)에 있는 내용만 모음. 새 진료 기준 없음. 원장님 검수 전 -->
+<style>
+:root{
+  --bg:#fbf8f3; --card:#ffffff; --ink:#1f2328; --sub:#555b63; --line:#e6e0d6;
+  --accent:#2f6f5e; --accent-bg:#e7f2ee;
+  --stop:#b4441f; --stop-bg:#fdeee7;
+  --em:#ffffff; --em-bg:#c0392b;
+  --warn:#8a5a00; --warn-bg:#fff4d6;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15181b; --card:#1e2226; --ink:#eceff1; --sub:#a9b0b7; --line:#30363c;
+    --accent:#7cc7b0; --accent-bg:#1d3530;
+    --stop:#ff9b78; --stop-bg:#3a2219;
+    --em:#ffffff; --em-bg:#a93226;
+    --warn:#ffd27a; --warn-bg:#3a3018;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  font-size:19px;line-height:1.65;word-break:keep-all}
+main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+header h1{font-size:1.6rem;line-height:1.35;margin:8px 0 10px}
+header p{margin:0 0 6px;color:var(--sub)}
+h2{font-size:1.3rem;margin:30px 0 10px}
+.level{border-radius:16px;padding:18px 18px 14px;margin:14px 0;border:1px solid var(--line)}
+.level .tag{display:inline-block;font-weight:800;font-size:1.15rem;margin-bottom:8px}
+.l1{background:var(--em-bg);color:var(--em);border:none}
+.l1 li b{color:var(--em)}
+.l2{background:var(--stop-bg)}
+.l2 .tag{color:var(--stop)}
+.l3{background:var(--accent-bg)}
+.l3 .tag{color:var(--accent)}
+.note{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:12px 0}
+ul{margin:6px 0;padding-left:1.2em}
+li{margin:8px 0}
+footer{margin-top:36px;color:var(--sub);font-size:.9rem;border-top:1px solid var(--line);padding-top:14px}
+footer a{color:var(--accent)}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  :root{--bg:#fff}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:16px}
+  main{max-width:none;padding:0}
+  .level,.note{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>수술 후,<br>언제 병원에 연락할까요?</h1>
+  <p>세 단계로 나눴어요. 내 증상이 어디에 있는지 찾아 보세요.</p>
+</header>
+
+<div class="level l1">
+  <div class="tag">🚨 1단계 · 바로 119 또는 응급실</div>
+  <ul>
+    <li>목이 <b>갑자기 붓고 단단해질 때</b></li>
+    <li><b>숨쉬기 어려울 때</b></li>
+    <li>침이나 물을 <b>삼키기가 갑자기 어려워질 때</b></li>
+  </ul>
+</div>
+
+<div class="level l2">
+  <div class="tag">📞 2단계 · 수술한 병원에 바로 연락</div>
+  <ul>
+    <li>목의 붓기가 <b>조금씩 올라오는 느낌</b>이 들 때</li>
+    <li>입 주변 · 손끝이 저려 <b>칼슘약을 3알 더 먹어도 저림이 계속되거나, 근육에 쥐가 날 때</b></li>
+    <li>상처의 <b>붉은 곳이 넓어지거나</b> 붓기 · 열감 · 통증이 심해질 때</li>
+    <li><b>38°C 이상 열</b>이나 오한이 날 때</li>
+    <li>상처에서 <b>고름이나 냄새</b>, 계속되는 <b>피</b>, 상처가 <b>벌어질 때</b></li>
+    <li>배액관 뺀 자리 진물이 <b>늘거나</b> 고름 · 냄새 · 열감이 생길 때</li>
+    <li>삼키기가 <b>점점 어려워질 때</b></li>
+  </ul>
+</div>
+
+<div class="level l3">
+  <div class="tag">📅 3단계 · 다음 외래 때 말씀하셔도 돼요</div>
+  <p style="margin:0 0 4px">대부분 시간이 지나면 좋아지는 것들이에요.</p>
+  <ul>
+    <li>목소리가 쉬거나 작아요 — 대부분 <b>6개월 안에</b> 돌아와요</li>
+    <li>흉터가 분홍빛이고 단단해요 — 보통 <b>3~6개월</b>에 부드러워져요</li>
+    <li>상처 주변 · 턱 아래가 둔해요 — <b>몇 주~몇 달</b>에 좋아져요</li>
+    <li>목 수술 후 생기는 <b>일반적인 딱딱한 붓기</b>예요 — <b>4~6주</b>까지 남을 수 있어요</li>
+    <li>삼킬 때 살짝 걸려요 — <b>며칠~2주</b>쯤에 좋아지는 경우가 많아요</li>
+    <li>상처가 조금 가려워요 — 아무는 과정이에요</li>
+    <li>흉터가 <b>계속 두꺼워지거나</b> 원래 상처보다 커져요</li>
+  </ul>
+</div>
+
+<div class="note">
+  📱 <b>퇴원할 때 받은 안내문의 병원 전화번호</b>를 휴대폰에 저장해 두세요.<br>
+  🏥 응급실에 가면 <b>「갑상선 수술을 받았어요」</b>라고 먼저 말씀하세요.
+</div>
+
+<div class="note">
+  잘 모르겠으면 <b>참지 말고 연락하세요.</b> 괜찮은지 확인하는 것도 병원이 하는 일이에요.
+</div>
+
+<footer>
+  이 안내는 일반적인 기준이에요. 사람마다 다를 수 있으니 담당 의사의 설명을 먼저 따르세요.<br>
+  <a href="03.html">수술 후 생활</a> · <a href="04.html">상처 관리</a> · <a href="./">다른 안내 보기</a>
+</footer>
+
+</main>
+</body>
+</html>
