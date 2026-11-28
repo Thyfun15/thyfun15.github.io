@@ -11,7 +11,9 @@
 body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;font-size:19px;line-height:1.6;word-break:keep-all}
 main{max-width:640px;margin:0 auto;padding:24px 16px 48px}
 h1{font-size:1.6rem;margin:8px 0 6px}
-p.sub{color:var(--sub);margin:0 0 20px}
+p.sub{color:var(--sub);margin:0}
+.hd{display:flex;align-items:center;gap:14px;margin:0 0 20px}
+.hd img{width:72px;height:72px;border-radius:50%;background:#fff;flex:0 0 72px}
 a.item{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:10px 0;color:var(--ink);text-decoration:none}
 a.item b{color:var(--accent);margin-right:8px}
 footer{margin-top:32px;color:var(--sub);font-size:.9rem}
@@ -19,8 +21,8 @@ footer{margin-top:32px;color:var(--sub);font-size:.9rem}
 </head>
 <body>
 <main>
-<h1>갑상선 수술 안내</h1>
-<p class="sub">궁금한 주제를 눌러 보세요.</p>
+<div class="hd"><img src="logo.png" alt="" width="72" height="72"><div><h1>갑상선 안내</h1>
+<p class="sub">궁금한 주제를 눌러 보세요.</p></div></div>
 <a class="item" href="01.html"><b>01</b>수술 전에 먹는 약, 이렇게 하세요</a>
 <a class="item" href="02.html"><b>02</b>수술 받으러 입원하기 전에 꼭 확인하세요</a>
 <a class="item" href="03.html"><b>03</b>수술 후, 집에서 이렇게 지내세요</a>
