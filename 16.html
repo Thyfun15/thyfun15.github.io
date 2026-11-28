@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>방사성 요오드 치료 뒤 추적 검사</title>
+<!-- 공개용. 근거: E:\갑상선 관련내용 PDF\대한갑상선학회 갑상선분화암 진료권고안 Part II. 갑상선분화암의 추적 2026_최종안_회람.pdf(II.1 · II.2 · II.3 · II.4 권고)
+     + 원장님 팀 「저용량 방사성 요오드 치료 안내서」 6~7쪽(진단용 전신 촬영 · 타이로젠). TSH 목표 숫자는 쉬운 말로만. 원장님 검수 전 -->
+<style>
+:root{
+  --bg:#fbf8f3; --card:#ffffff; --ink:#1f2328; --sub:#555b63; --line:#e6e0d6;
+  --accent:#2f6f5e; --accent-bg:#e7f2ee;
+  --stop:#b4441f; --stop-bg:#fdeee7;
+  --warn:#8a5a00; --warn-bg:#fff4d6;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15181b; --card:#1e2226; --ink:#eceff1; --sub:#a9b0b7; --line:#30363c;
+    --accent:#7cc7b0; --accent-bg:#1d3530;
+    --stop:#ff9b78; --stop-bg:#3a2219;
+    --warn:#ffd27a; --warn-bg:#3a3018;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  font-size:19px;line-height:1.65;word-break:keep-all}
+main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+header h1{font-size:1.6rem;line-height:1.35;margin:8px 0 10px}
+header p{margin:0 0 6px;color:var(--sub)}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+nav a{display:inline-block;padding:8px 14px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:.9rem}
+h2{font-size:1.3rem;margin:34px 0 12px;padding-top:6px;scroll-margin-top:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0}
+.card .q{font-weight:700;margin-bottom:4px}
+.box{border-radius:14px;padding:16px 18px;margin:14px 0;border:1px solid var(--line)}
+.warn{background:var(--warn-bg)}
+.warn strong.t{color:var(--warn);display:block;font-size:1.1rem;margin-bottom:6px}
+.red{background:var(--stop-bg)}
+.red strong.t{color:var(--stop);display:block;font-size:1.1rem;margin-bottom:6px}
+.note{background:var(--accent-bg);border-radius:12px;padding:12px 14px;margin:12px 0}
+.note a,.card a{color:var(--accent);font-weight:700}
+.step{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:10px 0}
+.step .no{flex:0 0 34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+.step .h{font-weight:800}
+.resp{border-left:6px solid var(--accent);background:var(--card);border-radius:12px;padding:10px 16px;margin:8px 0;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.resp .h{font-weight:800}
+.resp .d{color:var(--sub);font-size:.92rem}
+.e1{border-left-color:#27ae60}.e2{border-left-color:#f1c40f}.e3{border-left-color:#e67e22}.e4{border-left-color:#c0392b}
+.sched{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:6px 0}
+.sched b{white-space:nowrap}
+.faq .q{font-weight:700}
+ul{margin:6px 0;padding-left:1.2em}
+li{margin:6px 0}
+footer{margin-top:36px;color:var(--sub);font-size:.9rem;border-top:1px solid var(--line);padding-top:14px}
+footer a{color:var(--accent)}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  :root{--bg:#fff}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:15px}
+  main{max-width:none;padding:0}
+  nav{display:none}
+  .card,.box,.note,.step,.resp{break-inside:avoid}
+  h2{break-after:avoid}
+}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>방사성 요오드 치료 뒤,<br>추적 검사 이렇게 받아요</h1>
+  <p>치료가 끝나면 <b>얼마나 잘 치료됐는지</b> 확인하고, 혹시 모를 재발을 <b>일찍 찾기 위해</b> 정기 검사를 받아요.</p>
+  <p>결과가 좋으면 검사 <b>간격이 점점 늘어나요.</b></p>
+</header>
+
+<nav>
+  <a href="#why">왜 받나요</a>
+  <a href="#flow">검사 순서</a>
+  <a href="#test">검사 종류</a>
+  <a href="#scan">진단용 전신 촬영</a>
+  <a href="#result">결과 4가지</a>
+  <a href="#when">얼마나 자주</a>
+  <a href="#call">연락</a>
+</nav>
+
+<h2 id="why">1. 왜 계속 검사하나요?</h2>
+<div class="card"><ul>
+  <li>갑상선암은 재발이 드물지만 <b>몇 년 뒤</b>에도 생길 수 있어요. 일찍 찾으면 <b>대부분 다시 치료할 수 있어요.</b></li>
+  <li>치료 뒤 검사 결과를 보고 <b>재발 위험을 계속 다시 평가</b>해요. 그 결과로 약 양(TSH 목표)과 검사 간격을 정해요.</li>
+  <li>좋은 결과가 이어지는 대부분의 분은 <b>검사와 치료를 줄여</b> 불필요한 부담을 덜어요.</li>
+</ul></div>
+
+<h2 id="flow">2. 검사는 이런 순서로 해요</h2>
+<div class="step"><div class="no">1</div><div><div class="h">치료 며칠 뒤 — 치료 후 전신 촬영</div>
+  먹은 방사성 요오드가 몸 어디에 모였는지 확인해요. 금속 없는 편한 옷을 입고 오세요.</div></div>
+<div class="step"><div class="no">2</div><div><div class="h">6~8주마다 — 약 양 맞추기</div>
+  피검사(TSH · FT4)로 갑상선약 양을 맞춰요.</div></div>
+<div class="step"><div class="no">3</div><div><div class="h">치료 6~12개월 뒤 — 첫 번째 큰 평가</div>
+  <b>피검사</b>(TSH · 티로글로불린 · 티로글로불린 항체) + <b>목 초음파</b>.<br>
+  재발 위험이 <b>중간 · 높은</b> 분은 필요하면 <b>진단용 전신 촬영</b>을 함께 해요.</div></div>
+<div class="step"><div class="no">4</div><div><div class="h">그 뒤 — 결과에 맞춰 간격 정하기</div>
+  결과(아래 4가지)와 처음 위험도에 따라 <b>3개월~2년</b> 간격으로 검사해요.</div></div>
+
+<h2 id="test">3. 어떤 검사를 하나요?</h2>
+<div class="card"><div class="q">🩸 티로글로불린(Tg) · 티로글로불린 항체</div>
+  갑상선 세포만 만드는 단백질이에요. 갑상선을 모두 떼고 방사성 요오드 치료를 받았다면 <b>아주 낮아야</b> 해요. 그래서 <b>재발을 알려 주는 표지</b>로 써요.<br>
+  <span style="color:var(--sub)">항체가 있으면 Tg 값이 정확하지 않을 수 있어 <b>항체를 같이</b> 재요. 검사 방법이 바뀌면 값이 달라질 수 있어 <b>같은 검사법으로</b> 이어서 보는 게 좋아요.</span></div>
+<div class="card"><div class="q">🩸 갑상선 기능(TSH · FT4)</div>
+  갑상선약을 먹는 분은 <b>적어도 1년에 한 번</b>은 재요. 목표 TSH를 지킬 수 있는 <b>가장 적은 양</b>의 약을 써요.</div>
+<div class="card"><div class="q">🔊 목 초음파</div>
+  수술 자리와 목 림프절에 재발이 없는지 보는 <b>가장 기본 검사</b>예요. 의심되는 곳이 있으면 <b>세침검사</b>를 해요. → <a href="12.html">세침흡인검사 안내</a></div>
+<div class="card"><div class="q">🩻 CT · PET-CT</div>
+  모든 분이 하지 않아요. 초음파로 보기 어렵거나, <b>Tg · 항체가 올라가는데</b> 원인을 못 찾을 때 해요.</div>
+
+<h2 id="scan">4. 진단용 전신 촬영</h2>
+<div class="card"><ul>
+  <li><b>누가</b>: 재발 위험이 <b>중간 · 높은</b> 분이 치료 <b>6~12개월 뒤</b> 치료 반응을 볼 때, 또는 치료 후 촬영에서 갑상선 자리 말고 다른 곳에 섭취가 보였을 때 해요.</li>
+  <li><b>저위험</b>이고 결과가 좋은(완전반응) 분은 <b>하지 않아요.</b> 한 번 좋게 나오면 보통 다시 하지 않아요.</li>
+</ul></div>
+<div class="box warn"><strong class="t">📅 준비와 순서 (예)</strong>
+  <ul>
+    <li><b>2주 전부터 저요오드 식사</b> → <a href="06-1.html" style="color:var(--warn);font-weight:700">저요오드 식사 안내</a></li>
+    <li>갑상선약은 <b>계속 드세요.</b> 대신 촬영 전 <b>이틀 연속 주사</b>를 맞아요.</li>
+    <li>셋째 날 <b>진단용 소량</b>의 방사성 요오드를 먹고, 다음 날(또는 이틀 뒤) <b>전신 촬영</b>을 해요.</li>
+    <li>금속(목걸이 · 팔찌 · 반지 · 벨트)이 없는 편한 옷을 입고 오세요.</li>
+    <li>아주 <b>소량</b>이라 치료 때와 달리 촬영 뒤 <b>특별히 지킬 것은 없어요.</b> 저요오드 식사가 끝난 다음 날부터 평소대로 드세요.</li>
+    <li>약을 미리 준비하기 때문에 날짜를 바꾸기 어려워요. 꼭 바꿔야 하면 <b>최소 2주 전</b>에 연락하세요.</li>
+  </ul>
+  <span style="font-size:.9rem">요일 · 시간 · 금식은 병원에서 받은 안내를 따르세요.</span></div>
+
+<h2 id="result">5. 결과는 4가지로 나눠요</h2>
+<div class="resp e1"><div class="h">🟢 완전반응</div><div class="d">피검사 · 영상 모두 암의 흔적이 없어요. 가장 많은 결과예요.</div>
+  → 검사 간격을 <b>늘리고</b>, 약 목표도 <b>느슨하게</b> 해요.</div>
+<div class="resp e2"><div class="h">🟡 불명확반응</div><div class="d">Tg가 아주 조금 있거나 애매한 작은 림프절이 보여, 있다 없다 단정하기 어려워요.</div>
+  → 대부분 <b>지켜보면</b> 좋아지거나 그대로예요. 정기적으로 변화를 봐요.</div>
+<div class="resp e3"><div class="h">🟠 생화학적 불완전반응</div><div class="d">영상에는 보이는 게 없는데 Tg가 높거나 항체가 올라가요.</div>
+  → 더 자주 피검사를 하고, 올라가면 <b>추가 영상 검사</b>를 해요.</div>
+<div class="resp e4"><div class="h">🔴 구조적 불완전반응</div><div class="d">영상에서 남아 있거나 새로 생긴 병소가 보여요.</div>
+  → 재수술 · 방사성 요오드 · 국소 치료 · 약물 중에서 <b>함께 정해요.</b></div>
+
+<h2 id="when">6. 얼마나 자주 하나요?</h2>
+<p style="margin:0 0 8px;color:var(--sub)">처음 재발 위험도(낮음 · 중간 · 높음)와 결과에 따라 달라요. 대략 이 정도예요.</p>
+<div class="card"><div class="sched">
+  <b>🟢 완전반응</b><span>저 · 중간 위험: <b>1~2년마다</b> · 고위험: <b>6~12개월마다</b></span>
+  <b>🟡🟠 불명확 · 생화학적</b><span>저위험: <b>1~2년마다</b> · 중간 · 고위험: <b>6~12개월마다</b></span>
+  <b>🔴 구조적</b><span><b>3~6개월마다</b></span>
+</div>
+<span style="color:var(--sub);font-size:.92rem">피검사(Tg · 항체) 간격이에요. 초음파 간격은 결과와 위험도에 맞춰 따로 정해요. 갑상선약을 먹는 분은 TSH를 적어도 1년에 한 번 재요.</span></div>
+<div class="note">유두암은 재발이 드물지만 몇 년 뒤에도 생길 수 있어 <b>최소 10년 이상</b> 추적해요. 결과가 계속 좋으면 간격이 점점 늘어요.</div>
+
+<h2>7. 갑상선약 목표(TSH)도 결과에 따라 바뀌어요</h2>
+<div class="card"><ul>
+  <li>예전에는 TSH를 아주 낮게 누르는 경우가 많았지만, 요즘은 <b>모든 분을 0.1 미만으로 일률적으로 누르지 않아요.</b></li>
+  <li>TSH <b>정상 범위는 대략 0.3~4.0 mIU/L</b>예요. 검사 기계마다 기준이 조금 달라요.</li>
+</ul></div>
+<div class="card"><div class="q">📋 TSH 목표 (단위: mIU/L)</div>
+  <div class="sched">
+    <b>🟢🟡 완전 · 불명확</b><span>저 · 중간 위험: <b>정상 범위(0.3~4.0)</b><br>고위험: <b>2.0 미만</b>의 정상 범위(0.3~2.0)</span>
+    <b>🟠 생화학적</b><span>저 · 중간 위험: <b>2.0 미만</b>의 정상 범위(0.3~2.0)<br>고위험: <b>정상 하한(약 0.3)보다 낮게</b></span>
+    <b>🔴 구조적</b><span>원격 전이 등 병소가 남아 있으면: <b>0.1 미만</b></span>
+  </div>
+  <span style="color:var(--sub);font-size:.92rem">치료 직후 첫 목표는 저 · 중간 위험 <b>2.0 미만</b>의 정상 범위, 고위험 <b>정상 하한보다 낮게</b>, 병소가 남아 있으면 <b>0.1 미만</b>이에요. 그 뒤 결과(위 표)에 따라 바꿔요. (대한갑상선학회 진료권고안 기준)</span></div>
+<div class="card"><ul>
+  <li>너무 오래 낮게 누르면 <b>뼈가 약해지거나 부정맥</b>이 생길 수 있어, 특히 폐경 뒤 여성 · 어르신은 목표를 <b>완화</b>하기도 해요.</li>
+  <li>내 목표는 나이와 다른 병까지 보고 <b>의사가 정해요.</b> 약 양이 바뀌어도 <b>스스로 줄이거나 늘리지 마세요.</b> → <a href="07.html">갑상선약 먹는 법</a></li>
+</ul></div>
+
+<h2>자주 묻는 질문</h2>
+<div class="card faq"><div class="q">Q. Tg가 조금 나왔어요. 재발인가요?</div>
+  꼭 그렇지는 않아요. 아주 낮은 값은 <b>남은 정상 조직</b>에서 나오기도 하고, 시간이 지나며 줄어드는 경우가 많아요. 한 번 값보다 <b>변하는 추세</b>를 봐요.</div>
+<div class="card faq"><div class="q">Q. 매번 전신 촬영을 해야 하나요?</div>
+  아니에요. 위험이 낮고 결과가 좋으면 하지 않아요. 중간 · 고위험도 한 번 좋게 나오면 보통 다시 하지 않아요.</div>
+<div class="card faq"><div class="q">Q. 임신은 언제부터 되나요?</div>
+  방사성 요오드 치료 뒤 <b>1년</b>은 남녀 모두 피임하세요. → <a href="06.html">방사성 요오드 치료 안내</a></div>
+<div class="card faq"><div class="q">Q. 검사를 다른 병원에서 받아도 되나요?</div>
+  Tg는 검사법에 따라 값이 달라질 수 있어요. 옮기게 되면 <b>예전 결과지를 꼭</b> 가져가세요.</div>
+
+<div class="box red" id="call"><strong class="t">📞 다음 예약 전이라도 연락하세요</strong>
+  <ul>
+    <li>목에 <b>새 멍울</b>이 만져질 때</li>
+    <li>목소리가 <b>새로 쉬거나</b>, 삼키기 · 숨쉬기가 불편해질 때</li>
+    <li><b>계속되는 기침</b>이나 <b>뼈 통증</b>이 있을 때</li>
+    <li>두근거림 · 손 떨림 · 심한 피로처럼 <b>약이 맞지 않는</b> 느낌이 들 때</li>
+  </ul>
+</div>
+
+<footer>
+  간격과 목표는 사람마다 달라요. 담당 의사가 정해 드린 일정을 먼저 따르세요.<br>
+  <a href="06.html">방사성 요오드 치료</a> · <a href="14.html">갑상선암 종류와 치료</a> · <a href="./">다른 안내 보기</a>
+</footer>
+
+</main>
+</body>
+</html>
